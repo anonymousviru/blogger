@@ -74,6 +74,7 @@ user.setPassword(passwordEncoder.encode(signUpDto.getPassword()));
 
         return ResponseEntity.ok(new JWTAuthResponse(token));
     }
+    public void test(){}
 
     // sign in       User user = userRepository.findByUsernameOrEmail(loginDto.getUsernameOrEmail(), loginDto.getUsernameOrEmail()).get();
 //        if(loginDto.getUsernameOrEmail().equals(user.getEmail())&& loginDto.getPassword().equals(user.getPassword())){
